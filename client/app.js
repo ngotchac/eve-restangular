@@ -3,6 +3,8 @@ var angular = require('angular');
 require('lodash');
 require('restangular');
 
+var config = require('json!../global-config.json');
+
 angular
     .module('eve-restangular', ['restangular'])
     .config(['RestangularProvider', function(RestangularProvider) {
@@ -11,7 +13,7 @@ angular
                 id: '_id',
                 etag: '_etag'
             })
-            .setBaseUrl('http://localhost:5000/')
+            .setBaseUrl('http://' + config.server.host + ':' + config.server.port + '/')
             .setResponseExtractor(function(response) {
                 if (!angular.isArray(response)) return response._items;
 
