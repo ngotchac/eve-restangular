@@ -1,0 +1,19 @@
+{
+    "env": {
+        "node": true,
+        "mocha": true,
+        "browser": true,
+        "es6": true
+    },
+    "rules": {
+        "quotes": [2, "single"],
+        "strict": 0,
+        "curly": [2, "multi-line"],
+        "no-use-before-define": [2, "nofunc"],
+        "no-underscore-dangle": 0
+    },
+    "ecmaFeatures": {
+        "modules": true
+    }
+}
+

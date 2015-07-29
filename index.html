@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body ng-app="eve-restangular">
+        <h2>Working with Restangular && Python-Eve</h2>
+
+        <div ng-controller="MainCtrl">
+            <button ng-click="addUser()">Add User</button>
+            <button ng-click="getUsers()">Get Users</button>
+
+            <br />
+            <div ng-if="users.length">
+                <h3>Users</h3>
+                <ul>
+                    <li ng-repeat="user in users">
+                        {{user.firstname}} <b>{{user.lastname}}</b>
+                        <button title="Delete" ng-click="delete(user)">D</button>
+                        <button title="Modify" ng-click="modify(user)">M</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div ng-if="!users || !users.length">
+                <h3>No users...</h3>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+    </body>
+</html>
+

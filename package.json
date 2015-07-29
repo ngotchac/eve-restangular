@@ -1,0 +1,29 @@
+{
+  "name": "eve-restangular",
+  "version": "0.0.1",
+  "description": "A simple example on how to use Eve Python library with a front-end solution like Restangular for AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eve",
+    "python",
+    "angularjs",
+    "api",
+    "restangular",
+    "cors"
+  ],
+  "author": "Nicolas Gotchac <ngotchac@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.4.3",
+    "lodash": "^3.10.0",
+    "restangular": "^1.5.1"
+  },
+  "devDependencies": {
+    "webpack": "^1.10.5",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
