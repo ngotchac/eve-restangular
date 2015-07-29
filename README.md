@@ -2,7 +2,7 @@
 
 You must have `node`, `python`, `pip` and `virtualenv` installed locally.
 
-``bash
+```bash
 $> npm install
 $> virtualenv api/env
 $> api/env/bin/pip install -r api/requirements.txt
